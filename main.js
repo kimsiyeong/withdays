@@ -1,5 +1,3 @@
-
-
 // 햄버거 바 아이콘 선택자
 const menuOpenEl = document.getElementById('btn--open')
 // 닫는 아이콘 선택자
@@ -52,7 +50,8 @@ function clickButton() {
   temp.setAttribute("class", "list-group-item");
   temp.setAttribute("id", "li"+cnt);
   temp.innerHTML = input.value;
-  temp.innerHTML += "<button style='float: right;' class='btn btn-outline-secondary' type='button' onclick='remove("+cnt+")'>삭제</button>";
+  temp.innerHTML += "<button style='float: right;' class='btn btn-outline-secondary' type='button' onclick='remove("+cnt+")'>삭제</button>"; 
+  temp.innerHTML += "<button style='float: left;' class='btn btn-outline-first' type = 'button' onclick='click("+cnt+")'>v</button>";
   list.appendChild(temp);
   cnt++;
 }
@@ -61,5 +60,5 @@ function clickButton() {
 function remove(cnt) {
     var li = document.getElementById('li'+cnt);
     list.removeChild(li);
-  }
+}
 

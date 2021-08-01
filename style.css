@@ -92,6 +92,11 @@ h1 {
     color: plum;
 }
 
+#btnAdd:hover {
+    background-color: plum;
+    color: white;
+}
+
 nav {
     position: absolute;
     top: 90px;
@@ -120,6 +125,31 @@ li {
     font-size: 16px;
     
 }
+
+.btn.btn-outline-secondary:hover {
+    background-color: plum;
+    color: white;
+}
+
+.btn.btn-outline-first {
+    position: relative;
+    right: 40px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* button.btn-outline-first:hover {
+    background-color: plum;
+    color: white;
+} */
+/* 
+.btn.btn-outline-first:active {
+    background-color: plum;
+    color: white;
+} */
 
 select {
     width: 200px;
