@@ -1,0 +1,131 @@
+header {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 50px;
+    padding: 15px;
+    color: white;
+    background-color: plum;
+    height: 60px;
+    align-items: center;   
+    
+}
+
+body {
+    background-color: white;
+}
+
+/* 마이홈 버튼 */
+#btn--home {
+    position: fixed;
+    font-size: 64px;
+    right: 21px;
+    cursor: pointer;
+    
+}
+
+/* 사이드메뉴 */
+#btn--open {
+    color: #F6F5F0;
+    font-size: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 11px; 
+}
+
+/* 사이드 메뉴 닫기 */
+#btn--close {
+    color: #F6F5F0;
+    font-size: 64px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 11px; 
+}
+
+
+header>.material.icons {
+    position: absolute;
+}
+
+header>.material-icons#btn--open {
+    display: block;
+}
+
+header>.material-icons#btn--close {
+    display: none;
+}
+
+
+/* todolist, 검색박스, add버튼까지 */
+.list-box {           
+    margin: 50px;
+    text-align: center;
+    position: flex;
+}     
+
+
+/* todolist 제목 */
+h1 {
+    font-size: 25px;
+    padding: 20px;
+    color: plum;
+    font-weight: bold;
+
+}
+
+/* 입력창 */
+#text_basic {
+    font-size: 20px;
+    border-color: plum;
+    padding: 0px 30px;
+    width: 300px;
+    height: 40px;
+    
+}
+
+#btnAdd {
+    font-size: 29px;
+    border-color: plum;
+    background-color: white;
+    cursor: pointer;
+    color: plum;
+}
+
+nav {
+    position: absolute;
+    top: 90px;
+    height: calc(100vh - 60px);
+    width: 300px;
+    background: #F6F5F0;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+
+li {
+    position: relative;
+    left: 36%;
+    border-radius: 2em;
+    padding: 10px;
+    background-color: blanchedalmond;
+    width: 300px;
+    margin: 30px;
+}
+
+.btn.btn-outline-secondary {
+    position: relative;
+    left: 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+select {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-color: plum;
+    font-size: 20px;
+    border-width: 2px;
+}

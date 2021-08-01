@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Withdays</title>
+</head>
+<body>
+    
+    <header>WithDays   
+    
+        <div id="btn--open" class="material-icons">
+            menu
+            </div>
+        
+        <div id="btn--home" class = "material-icons">
+            home
+        </div>      
+        <div id="btn--close" class="material-icons">
+            close
+        </div>
+    </header>
+    <nav id="side_menu"></nav>
+    <div class = "list-box">
+        <h1>To Do List</h1>
+        <select name = "group">
+            <option value="">group1</option>
+            <option value="">group2</option>
+            <option value="">group3</option>
+        </select>
+        <div class = "write-box">
+            <input type="text" id="text_basic" onkeyup="if(window.event.keyCode==13){clickButton()}">
+            <button type="button" id="btnAdd">+</button>
+            
+            <ul id ="list">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
