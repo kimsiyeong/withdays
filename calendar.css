@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+  
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    /* 달력위치(높이)설정 */
+    min-height: 10vh;
+    
+  }
+  
+  .calendar {
+    position: fixed;
+    width: 800px;
+    margin: 80px;
+    left: 20%;
+    
+  }
+  
+  /* 달력 위 헤더 */
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    overflow: visible;
+  }
+  
+  /* 헤더에 연/월부분 */
+  .year-month {
+    font-size: 45px;
+    align-items: center;
+  }
+  
+  /* 월 이동하는 박스 */
+  .nav {
+    display: flex;
+    border: 2px solid #333333;
+    border-radius: 5px;
+  }
+  /* 월 이동하는 박스 */
+  .nav-btn {
+    width: 60px;
+    height: 30px;
+    border: none;
+    font-size: 13px;
+    line-height: 34px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* 오늘로 이동 칸 */
+  .go-today {
+    width: 75px;
+    border-left: 2px solid #333333;
+    border-right: 2px solid #333333;
+  }
+  /* 요일줄 */
+  .days {
+    display: flex;
+    margin: 25px 0 10px;
+  }
+  /* 요일칸 */
+  .day {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  /* 일 칸 */
+  .dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+  }
+  /* 일 숫자 */
+  .date {
+    width: calc(100% / 7);
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+  }
+  
+  .day:nth-child(7n + 1),
+  .date:nth-child(7n + 1) {
+    color: #FF0000;
+  }
+  
+  .day:nth-child(7n),
+  .date:nth-child(7n) {
+    color: #3d40fd;
+  }
+  /* 이전달/다음달날짜는 약간투명하게 */
+  .other {
+    opacity: 0.3;
+  }
+  /* 오늘 */
+  .today {
+    position: relative;
+    color: #FFFFFF;
+  }
+  /* 오늘임을 달력에 표시 */
+  .today::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #d576d8;
+    border-radius: 50%;
+    content: '';
+  }
+
+
+
+  /* 내가 한거 */
+
+  header {
+    position: fixed;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 50px;
+    padding: 0 700px;
+    color: white;
+    background-color: plum;
+    height: 60px;
+    align-items: center;
+    
+   
+}
+
+
+#btn--home {
+  position: fixed;
+  font-size: 64px;
+  right: 21px;
+  cursor: pointer;
+  
+}
+
+/* 사이드메뉴 */
+#btn--open {
+  color: #F6F5F0;
+  font-size: 64px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  top: 11px; 
+}
+
+/* 사이드 메뉴 닫기 */
+#btn--close {
+  color: #F6F5F0;
+  font-size: 64px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  top: 11px; 
+}
+
+
+header>.material.icons {
+  position: absolute;
+}
+
+header>.material-icons#btn--open {
+  display: block;
+}
+
+header>.material-icons#btn--close {
+  display: none;
+}
+
+
+
+nav {
+  position: absolute;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: 300px;
+  background: #F6F5F0;
+  transform: translateX(-100%);
+  transition: .4s;
+  font-size: 30px;
+ 
+}
+
+
+.sides1, .sides2, .sides3, .sides4 {
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.sides1:hover {
+  background-color: gray;
+  transition: 0.4s;
+}
+
+.sides2:hover {
+  background-color: gray;
+  transition: .4s;
+}
+
+.sides3:hover {
+  background-color: gray;
+  transition: .4s;
+}
+
+.sides4:hover {
+  background-color: gray;
+  transition: .4s;
+}

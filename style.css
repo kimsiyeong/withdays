@@ -84,6 +84,11 @@ h1 {
     
 }
 
+/* input 박스 클릭시 검정 테두리 안나오게 */
+input:focus {
+    outline: none;
+}
+
 #btnAdd {
     font-size: 29px;
     border-color: plum;
@@ -104,6 +109,34 @@ nav {
     width: 300px;
     background: #F6F5F0;
     transform: translateX(-100%);
+    transition: .4s;
+    font-size: 30px;
+   
+}
+
+.sides1, .sides2, .sides3, .sides4 {
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sides1:hover {
+    background-color: gray;
+    transition: 0.4s;
+}
+
+.sides2:hover {
+    background-color: gray;
+    transition: .4s;
+}
+
+.sides3:hover {
+    background-color: gray;
+    transition: .4s;
+}
+
+.sides4:hover {
+    background-color: gray;
     transition: .4s;
 }
 
@@ -141,16 +174,6 @@ li {
 
 
 
-/* button.btn-outline-first:hover {
-    background-color: plum;
-    color: white;
-} */
-/* 
-.btn.btn-outline-first:active {
-    background-color: plum;
-    color: white;
-} */
-
 select {
     width: 200px;
     padding: 10px 10px;
@@ -158,4 +181,8 @@ select {
     border-color: plum;
     font-size: 20px;
     border-width: 2px;
+    
 }
+
+
+

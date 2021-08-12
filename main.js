@@ -62,3 +62,11 @@ function remove(cnt) {
     list.removeChild(li);
 }
 
+// 코드 안먹음
+var button = document.getElementsByClassName('btn btn-outline-first');
+button.addEventListener('click', checked);
+
+function checked() {
+    document.getElementById('list').style.backgroundColor = '#db0d36';
+}
+

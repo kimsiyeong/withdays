@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="calendar.css">
+  <title>Withdays</title>
+</head>
+<body>
+    <header>
+        Withdays
+        <div id="btn--open" class="material-icons">
+          menu
+          </div>
+      
+        <div id="btn--home" class = "material-icons">
+          home
+      </div>      
+      <div id="btn--close" class="material-icons">
+          close
+      </div>
+    </header>
+    <nav id="side_menu">
+        
+      <div class = "sides1", onclick = "location.href = 'index.html';">할 일 목록</div>
+      <div class = "sides2", onclick = "location.href='calendar.html';">마이캘린더</div>
+      <div class = "sides3">방 찾기</div>
+      <div class = "sides4">방 만들기</div>
+    </nav>
+    <div class="calendar">
+    <div class="header1">
+      <div class="year-month"></div>
+      <div class="nav">
+        <!-- 지난달로 -->
+        <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+        <!-- 오늘로 이동버튼 -->
+        <button class="nav-btn go-today" onclick="goToday()">오늘로 이동</button>
+        <!-- 다음달로 -->
+        <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="days">
+        <div class="day">SUN</div>
+        <div class="day">MON</div>
+        <div class="day">TUE</div>
+        <div class="day">WED</div>
+        <div class="day">THU</div>
+        <div class="day">FRI</div>
+        <div class="day">SAT</div>
+      </div>
+      <div class="dates"></div>
+    </div>
+  </div>
+  <script src="calendar.js"></script>
+</body>
+</html>
